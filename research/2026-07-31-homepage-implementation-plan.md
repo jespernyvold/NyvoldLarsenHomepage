@@ -24,6 +24,7 @@ The finished website must:
 - Use a deliberately simple technology stack with no unnecessary frameworks.
 - Run in Google App Engine Standard.
 - Support occasional additions, particularly new insight articles.
+- Provide complete Danish and English versions with a clear language switch.
 - Measure homepage visits, article views and article downloads through Google
   Analytics 4 for visitors who consent to analytics.
 
@@ -51,6 +52,17 @@ application code.
 app.yaml
 www/
   index.html
+  da/
+    index.html
+    insights/
+      technical-debt/
+        index.html
+        technical-debt.pdf
+      digital-sovereignty/
+        index.html
+        digital-sovereignty.pdf
+    privacy/
+      index.html
   insights/
     technical-debt/
       index.html
@@ -85,6 +97,38 @@ The homepage will follow the latest approved content structure:
 4. My background
 5. Insights
 6. Start a conversation
+
+The complete homepage will be available in both English and Danish. English
+will use `/` as its canonical homepage and Danish will use `/da/`. The two
+versions will use the same structure, design and meaning; translations should
+read naturally in each language rather than follow the source text word for
+word.
+
+## Language selection
+
+The header will contain a compact, always-visible language switch labelled
+`EN` and `DA`. It must remain easy to find and operate on desktop and mobile,
+including with a keyboard and assistive technology.
+
+The language design will follow these rules:
+
+- English pages use the existing unprefixed URLs, such as `/` and
+  `/insights/technical-debt/`.
+- Danish pages use `/da/`, such as `/da/` and
+  `/da/insights/technical-debt/`.
+- Switching language keeps the visitor on the equivalent page whenever that
+  translation exists.
+- Homepage sections, navigation, calls to action, consent controls, privacy
+  information, metadata and error messaging are translated consistently.
+- An insight is published in the language switch only when the corresponding
+  translation is available; the control must never lead to a missing page.
+- The selected language may be remembered locally as a functional preference,
+  independently of analytics consent.
+- The site will not rely on browser-language detection or an automatic redirect
+  as the only way to choose a language. Stable, shareable language-specific
+  URLs remain authoritative.
+- The visible switch labels and accessible names must make both the current
+  language and the available alternative unambiguous.
 
 ### Opening
 
@@ -216,6 +260,10 @@ Each article will have a normal HTML page. Where a downloadable version is
 provided, the article will also include an optional PDF with a clear “Download
 article” action.
 
+Each published language version will have its own HTML page and, when offered,
+its own correctly translated PDF. The language switch will connect equivalent
+article versions.
+
 Each article page will include:
 
 - Article title.
@@ -268,6 +316,8 @@ The implementation will measure:
 - LinkedIn clicks.
 - Traffic sources.
 - Device categories.
+- Usage of the English and Danish page versions, distinguished by canonical
+  page path.
 
 GA4 Enhanced Measurement will provide standard page-view and supported file-
 download events. Purposeful custom events may be added for contact and LinkedIn
@@ -297,6 +347,8 @@ The implementation will include:
 - Unique and descriptive page titles.
 - Meta descriptions.
 - Canonical URLs.
+- Reciprocal `hreflang="en"` and `hreflang="da"` annotations, plus an
+  appropriate `x-default` entry.
 - Open Graph metadata.
 - A site-specific social-sharing image if a suitable asset is approved.
 - Structured article data where appropriate.
@@ -329,6 +381,7 @@ The implementation will provide:
 
 - Semantic landmarks and headings.
 - Keyboard-operable navigation and controls.
+- An accessible language switch whose current state is announced correctly.
 - Visible focus indicators.
 - Sufficient colour contrast.
 - Touch-friendly control sizes.
@@ -375,6 +428,9 @@ Before production promotion, validation will cover:
 - Image quality and layout stability.
 - Broken links and missing assets.
 - Article HTML pages and PDF downloads.
+- English and Danish page parity, language switching and remembered preference.
+- Correct canonical and reciprocal `hreflang` metadata for every translated
+  page pair.
 - Search and social metadata.
 - Consent acceptance, rejection, persistence and withdrawal.
 - Absence of Google Analytics requests before consent.
@@ -393,7 +449,8 @@ Before production promotion, validation will cover:
 - LinkedIn profile URL.
 - Confirmation of the primary email address.
 - Custom domain and Google Cloud project details.
-- Final language strategy.
+- Approved Danish translations of the homepage, privacy/consent interface and
+  initial articles.
 - Approved privacy and cookie wording.
 - Higher-resolution or vector logo and portrait assets if available.
 
