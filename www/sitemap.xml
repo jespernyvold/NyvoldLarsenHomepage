@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nyvold-larsen.dk/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/da/" />
+  </url>
+  <url>
+    <loc>https://nyvold-larsen.dk/da/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/da/" />
+  </url>
+  <url>
+    <loc>https://nyvold-larsen.dk/privacy/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/privacy/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/da/privacy/" />
+  </url>
+  <url>
+    <loc>https://nyvold-larsen.dk/da/privacy/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/privacy/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/da/privacy/" />
+  </url>
+</urlset>

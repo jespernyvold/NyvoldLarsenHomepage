@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nyvold-larsen.dk/sitemap.xml
+

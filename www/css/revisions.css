@@ -1,0 +1,21 @@
+.eyebrow {
+  gap: 0;
+}
+
+.eyebrow::before {
+  display: none;
+}
+
+.background-proof {
+  margin: 3rem 0 2rem;
+}
+
+.service-number {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .service-number {
+    margin-bottom: 1.25rem;
+  }
+}
