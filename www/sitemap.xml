@@ -4,25 +4,25 @@
   <url>
     <loc>https://nyvold-larsen.dk/</loc>
     <lastmod>2026-08-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/da/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/en/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/" />
   </url>
   <url>
-    <loc>https://nyvold-larsen.dk/da/</loc>
-    <lastmod>2026-08-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/da/" />
+    <loc>https://nyvold-larsen.dk/en/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/en/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/" />
   </url>
   <url>
     <loc>https://nyvold-larsen.dk/privacy/</loc>
     <lastmod>2026-08-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/privacy/" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/da/privacy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/privacy/" />
   </url>
   <url>
-    <loc>https://nyvold-larsen.dk/da/privacy/</loc>
-    <lastmod>2026-08-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/privacy/" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/da/privacy/" />
+    <loc>https://nyvold-larsen.dk/en/privacy/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nyvold-larsen.dk/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://nyvold-larsen.dk/privacy/" />
   </url>
 </urlset>
