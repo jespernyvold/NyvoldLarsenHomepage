@@ -17,6 +17,14 @@ handlers:
     http_headers:
       Cache-Control: "public, max-age=300"
 
+  - url: /en/?
+    static_files: www/en/index.html
+    upload: www/en/index.html
+    secure: always
+    redirect_http_response_code: 301
+    http_headers:
+      Cache-Control: "public, max-age=300"
+
   - url: /privacy/?
     static_files: www/privacy/index.html
     upload: www/privacy/index.html
@@ -33,6 +41,14 @@ handlers:
     http_headers:
       Cache-Control: "public, max-age=300"
 
+  - url: /en/privacy/?
+    static_files: www/en/privacy/index.html
+    upload: www/en/privacy/index.html
+    secure: always
+    redirect_http_response_code: 301
+    http_headers:
+      Cache-Control: "public, max-age=300"
+
   - url: /(css|js|images)/(.*)
     static_files: www/\1/\2
     upload: www/(css|js|images)/(.*)
@@ -40,6 +56,15 @@ handlers:
     redirect_http_response_code: 301
     http_headers:
       Cache-Control: "public, max-age=31536000, immutable"
+
+  - url: /downloads/(.*\.pdf)
+    static_files: www/downloads/\1
+    upload: www/downloads/(.*\.pdf)
+    secure: always
+    redirect_http_response_code: 301
+    http_headers:
+      Cache-Control: "public, max-age=86400"
+      Content-Disposition: "attachment"
 
   - url: /(robots\.txt|sitemap\.xml|404\.html)
     static_files: www/\1
@@ -49,4 +74,3 @@ handlers:
 
 error_handlers:
   - file: www/404.html
-

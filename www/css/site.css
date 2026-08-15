@@ -1141,6 +1141,11 @@ input {
   white-space: nowrap;
 }
 
+a.article-status {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+}
+
 .contact-links {
   display: grid;
   justify-items: start;
